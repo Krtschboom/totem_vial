@@ -281,7 +281,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
         case MAKE_H:
           if (record->event.pressed) {
-            SEND_STRING ("qmk compile -kb geigeigeist/totem -km factory");
+            SEND_STRING ("qmk compile -kb geigeigeist/totem -km geist");
             tap_code(KC_ENTER); 
           } 
           break;
